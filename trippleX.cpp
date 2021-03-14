@@ -36,5 +36,12 @@ int main()
     // std::cout << "your attempt is: " << GuessA << GuessB << GuessC << std::endl;
     std::cout << "your sum total is: " << GuessSum << std::endl;
     std::cout << "your sum product is: " << GuessProduct << std::endl;
+
+    if (GuessSum == CodeSum && GuessProduct == CodeProduct){
+    std::cout << "You Win" << std::endl;
+    } else {
+    std::cout << "he's dead! better luck next time!" << std::endl;
+    }
+    
     return 0;
 }
