@@ -4,9 +4,9 @@ bool PlayGame(int CurrentLevel)
 {
 
     //decalres the variables 
-    int CodeA = 2;
-    int CodeB = 4;
-    int CodeC = 4;
+    int CodeA = rand() % 3+CurrentLevel;
+    int CodeB = rand() % 3+CurrentLevel;
+    int CodeC = rand() % 3+CurrentLevel;
     
 
     int CodeSum = CodeA + CodeB + CodeC;
@@ -63,7 +63,7 @@ int main()
 {    
     int CurrentLevel = 1 ;
     PrintIntro();
-    while(CurrentLevel < 3){
+    while(CurrentLevel < 5){
         if (PlayGame(CurrentLevel) == true)
         {
         CurrentLevel++;
