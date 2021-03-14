@@ -21,7 +21,7 @@ int main()
     std::cout << "The code's numbers add up to: "<< CodeSum << std::endl;   
     std::cout << "The code's numbers multiply to: " << CodeProduct<< std::endl;
     
-    std::cout << "Please input the the numbers you believe makeup the code"<< std::endl;
+    std::cout << "Please input the three numbers you believe makeup the code"<< std::endl;
    // int GuessA, int GuessB, int GuessC;
     int GuessA;
     int GuessB;
