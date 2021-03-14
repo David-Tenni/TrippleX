@@ -8,16 +8,27 @@ int main()
     std::cout << "The code to save the robot has three numbers"<< std::endl;
 
 
-    //decalres the variables 
-    int a = 2;
-    int b = 4;
-    int c = 4;
+    //decalres the code 
+    int CodeA = 2, int CodeB = 4, int CodeC = 4;
+    //initalises player guess variables
+    int GuessA, int GuessB, int GuessC;
+
+    int CodeSum = CodeA + CodeB + CodeC;
+    int CodeProduct = CodeA * CodeB * CodeC;
+
+    std::cout << "The code's numbers add up to: "<< CodeSum << std::endl;   
+    std::cout << "The code's numbers multiply to: " << CodeProduct<< std::endl;
     
-    int sum = a + b + c;
-    int product = a * b * c;
+    std::cout << "Please input the first number you think is in the code"<< std::endl;
+    std::cin >> GuessA;    
+    
+    std::cout << "Please input the second number you think is in the code"<< std::endl;
+    std::cin >> GuessB;
+     
+    std::cout << "Please input the third number you think is in the code"<< std::endl;
+    std::cin >> GuessC;
 
-    std::cout << "The code's numbers add up to: "<< sum << std::endl;   
-    std::cout << "The code's numbers multiply to: " << product;
 
+    std::cout << "your attempt is: " << GuessA << GuessB << GuessC;
     return 0;
 }
