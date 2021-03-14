@@ -21,8 +21,8 @@ int main()
     std::cout << "The code's numbers add up to: "<< CodeSum << std::endl;   
     std::cout << "The code's numbers multiply to: " << CodeProduct<< std::endl;
     
-    std::cout << "Please input the three numbers you believe makeup the code"<< std::endl;
-   // int GuessA, int GuessB, int GuessC;
+    std::cout << "Please input the three numbers you \"believe\" makeup the code\n"<< std::endl;
+   // store player guessess
     int GuessA;
     int GuessB;
     int GuessC;
@@ -37,9 +37,11 @@ int main()
     std::cout << "your sum total is: " << GuessSum << std::endl;
     std::cout << "your sum product is: " << GuessProduct << std::endl;
 
-    if (GuessSum == CodeSum && GuessProduct == CodeProduct){
+    if (GuessSum == CodeSum && GuessProduct == CodeProduct)
+    {
     std::cout << "You Win" << std::endl;
-    } else {
+    } else 
+    {
     std::cout << "he's dead! better luck next time!" << std::endl;
     }
     
