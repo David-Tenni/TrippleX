@@ -1,6 +1,6 @@
 #include <iostream>
 
-bool PlayGame()
+bool PlayGame(int CurrentLevel)
 {
 
     //decalres the variables 
@@ -11,6 +11,7 @@ bool PlayGame()
 
     int CodeSum = CodeA + CodeB + CodeC;
     int CodeProduct = CodeA * CodeB * CodeC;
+    std::cout << "\n Level " << CurrentLevel;   
 
     std::cout << "\nThere are three numbers in the code \n\n";   
     std::cout << "The code's numbers add up to: "<< CodeSum;   
@@ -60,10 +61,10 @@ void VictoryText()
 }
 int main() 
 {    
-    int CurrentLevel =0 ;
+    int CurrentLevel = 1 ;
     PrintIntro();
     while(CurrentLevel < 3){
-        if (PlayGame() == true)
+        if (PlayGame(CurrentLevel) == true)
         {
         CurrentLevel++;
         }
