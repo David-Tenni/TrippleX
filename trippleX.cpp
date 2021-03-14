@@ -30,8 +30,11 @@ int main()
     std::cin >> GuessB;    
     std::cin >> GuessC;    
 
+    int GuessSum = GuessA + GuessB + GuessC;
+    int GuessProduct= GuessA * GuessB * GuessC;
 
-
-    std::cout << "your attempt is: " << GuessA << GuessB << GuessC;
+    // std::cout << "your attempt is: " << GuessA << GuessB << GuessC << std::endl;
+    std::cout << "your sum total is: " << GuessSum << std::endl;
+    std::cout << "your sum product is: " << GuessProduct << std::endl;
     return 0;
 }
