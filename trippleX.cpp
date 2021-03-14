@@ -1,4 +1,5 @@
 #include <iostream>
+#include<ctime>
 
 bool PlayGame(int CurrentLevel)
 {
@@ -61,6 +62,8 @@ void VictoryText()
 }
 int main() 
 {    
+    srand(time(NULL));
+    
     int CurrentLevel = 1 ;
     PrintIntro();
     while(CurrentLevel < 5){
