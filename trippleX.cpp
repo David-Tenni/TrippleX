@@ -17,11 +17,11 @@ int main()
     int CodeSum = CodeA + CodeB + CodeC;
     int CodeProduct = CodeA * CodeB * CodeC;
 
-    std::cout << "There is three numbers in the code " << std::endl;   
-    std::cout << "The code's numbers add up to: "<< CodeSum << std::endl;   
-    std::cout << "The code's numbers multiply to: " << CodeProduct<< std::endl;
+    std::cout << "There are three numbers in the code \n";   
+    std::cout << "The code's numbers add up to: "<< CodeSum;   
+    std::cout << "\nThe code's numbers multiply to: " << CodeProduct;
     
-    std::cout << "Please input the three numbers you \"believe\" makeup the code\n"<< std::endl;
+    std::cout << "\nPlease input the three numbers you \"believe\" makeup the code";
    // store player guessess
     int GuessA;
     int GuessB;
@@ -33,16 +33,15 @@ int main()
     int GuessSum = GuessA + GuessB + GuessC;
     int GuessProduct= GuessA * GuessB * GuessC;
 
-    // std::cout << "your attempt is: " << GuessA << GuessB << GuessC << std::endl;
-    std::cout << "your sum total is: " << GuessSum << std::endl;
-    std::cout << "your sum product is: " << GuessProduct << std::endl;
+    std::cout << "\nyour sum total is: " << GuessSum;
+    std::cout << "\nyour sum product is: " << GuessProduct;
 
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
-    std::cout << "You Win" << std::endl;
+    std::cout << "\nYou Win";
     } else 
     {
-    std::cout << "he's dead! better luck next time!" << std::endl;
+    std::cout << "\nhe's dead! better luck next time!";
     }
     
     return 0;
