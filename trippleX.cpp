@@ -50,7 +50,7 @@ bool PlayGame(int CurrentLevel)
 void PrintIntro()
 {
         //prints starting messages
-    std::cout << "Welcome to the World of Machines"<< std::endl;
+    std::cout << "Welcome to the World of Machines!"<< std::endl;
     std::cout << "We need you to perform robo brain surgery on these robots"<< std::endl;
     std::cout << "The code to save the robot has three numbers"<< std::endl;
 }
