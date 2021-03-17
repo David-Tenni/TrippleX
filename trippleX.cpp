@@ -57,7 +57,7 @@ void PrintIntro()
 
 void VictoryText()
 {
-    std::cout << "\nHot damn son you won the whole damn game"<< std::endl;
+    std::cout << "\nHot damn son you won the whole damn game!"<< std::endl;
 
 }
 int main() 
